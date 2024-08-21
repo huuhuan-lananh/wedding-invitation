@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Cưới Lan Anh & Hữu Huấn</title>
+    <!-- Link tới Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Điều hướng -->
+    <img src="image/hoa.png" alt="Hoa" class="hoa-img">
+    <nav>
+        <img src="image/lqmobile.png" alt="Liên quân mobile" class="lienquan-img">
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu">
+            <li><a href="#home"><span>🏠Trang Chủ</span></a></li>
+            <li><a href="#gallery"><span>🖼️Bộ sưu tập</span></a></li>
+            <li><a href="#map_inf"><span><i class="fas fa-map-marker-alt"></i>Google map</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Trang chủ -->
+    <section id="home" class="section home">
+        <div class="container">
+            <h2>Thiệp cưới</h2>
+            <h1><span class="highlight">Lan Anh 💘 Hữu Huấn</span></h1>
+            <div class="date-wrapper">
+                <h3>06/9/2024</h3>
+                <img src="image/ke.png" alt="Dấu gạch" class="underline-img">
+            </div>
+            
+            <div class="images">
+                <img src="image/LanAnh.JPG" alt="Cô dâu Lan Anh">
+                <img src="image/Huan.JPG" alt="Chú rể Hữu Huấn">
+            </div>
+            <div class="text-block">
+                <p>Chào mừng bạn đến với thiệp mời trực tuyến!</p>
+                <p>Chúng tôi rất vui mừng và hạnh phúc khi thông báo rằng ngày trọng đại trong cuộc đời chúng tôi 
+                    đang đến gần. Đây là một cột mốc quan trọng không chỉ trong cuộc sống của chúng tôi mà còn là 
+                    một khoảnh khắc đáng nhớ mà chúng tôi muốn chia sẻ với tất cả những người thân yêu và bạn bè 
+                    thân thiết.</p>
+                <p>Với niềm vui và sự hồi hộp, chúng tôi xin trân trọng kính mời các bạn đến tham dự lễ cưới của chúng 
+                    tôi, một sự kiện đầy ý nghĩa và đáng nhớ. Lễ cưới sẽ được tổ chức trong hai ngày đặc biệt là 05 và 
+                    06 tháng 9 năm 2024. Ngày 06 tháng 9 sẽ là ngày diễn ra buổi lễ chính thức trong sự chứng kiến của 
+                    gia đình và bạn bè gần gũi tại gia đình của chú rể và cô dâu.</p>
+                <p>Sự hiện diện của các bạn là món quà quý giá và không thể thay thế, giúp cho ngày cưới của chúng tôi 
+                    trở nên ý nghĩa và đáng nhớ hơn bao giờ hết. Chúng tôi rất mong chờ được đón tiếp các bạn trong ngày 
+                    trọng đại này và cùng nhau tạo nên những kỷ niệm đẹp, những khoảnh khắc đáng trân trọng mà chúng tôi 
+                    sẽ lưu giữ suốt đời.</p>
+            </div>
+            <!-- code thêm lịch cưới và đếm ngược đến ngày cưới ở đây -->
+            <div class="calendar-wrapper">
+                <div class="calendar-controls">
+                    <button id="prevMonth">◀</button>
+                    <h3 id="monthYear">Tháng 9 / 2024</h3>
+                    <button id="nextMonth">▶</button>
+                </div>
+                <table id="calendar">
+                    <thead>
+                        <tr>
+                            <th>T2</th>
+                            <th>T3</th>
+                            <th>T4</th>
+                            <th>T5</th>
+                            <th>T6</th>
+                            <th>T7</th>
+                            <th>CN</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="countdown-wrapper">
+                    <h3>Lễ cưới sẽ diễn ra sau</h3>
+                    <div id="countdown">
+                        <div class="time"><span id="days"></span><p>Ngày</p></div>
+                        <div class="time"><span id="hours"></span><p>Giờ</p></div>
+                        <div class="time"><span id="minutes"></span><p>Phút</p></div>
+                        <div class="time"><span id="seconds"></span><p>Giây</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bộ sưu tập -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <h2 >Bộ Sưu Tập</h2>
+            <div class="text-block">
+                <p>Những bức ảnh này ghi lại những khoảnh khắc tuyệt vời của chúng tôi. 
+                    Mỗi bức ảnh không chỉ đơn thuần là hình ảnh, mà còn là những kỷ niệm 
+                    quý giá và cảm xúc chân thành mà chúng tôi muốn chia sẻ. </p>
+            </div>
+
+            <div class="image-grid">
+                <img src="image/LMH_3245.jpg" alt="Ảnh 1">
+                <img src="image/LMH_3117.jpg" alt="Ảnh 2">
+                <img src="image/LMH_3174.jpg" alt="Ảnh 3">
+                <img src="image/LMH_3144.jpg" alt="Ảnh 4">
+                <img src="image/LMH_3140.jpg" alt="Ảnh 5">
+                <img src="image/LMH_2974.jpg" alt="Ảnh 6">
+                <img src="image/LMH_3410.jpg" alt="Ảnh 7">
+                <img src="image/LMH_3449.jpg" alt="Ảnh 8">
+                <img src="image/LMH_3358.jpg" alt="Ảnh 9">
+                <img src="image/LMH_3511.jpg" alt="Ảnh 10">
+            </div>
+            <div class="video">
+                <iframe  src="https://www.youtube.com/embed/LSa_c1boV_M?si=wit5z9_12PrgkfnV" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Địa chỉ -->
+    <section id="map_inf" class="section map_inf">
+        <div class="container">
+            <h2>Google map</h2>
+            <div class="text-block1">
+                <div class="map">
+                    <p class="text-white">Nhà trai: Văn Hội, huyện Ninh Giang, tỉnh Hải Dương.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d710.7364653992583!2d106.27838926948897!3d20.698947253341938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDQxJzU2LjIiTiAxMDbCsDE2JzQ0LjUiRQ!5e1!3m2!1svi!2s!4v1724073998016!5m2!1svi!2s"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map">
+                    <p class="text-white">Nhà gái: Minh Nông, thành phố Việt Trì, tỉnh Phú Thọ.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380.8490537722105!2d105.38425343811492!3d21.310287965509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31348d881f64473f%3A0xd4eb92de0cefdb10!2zVGnhu4dtIFNpbmggVOG7kSBWxakgUGhhbg!5e1!3m2!1svi!2s!4v1724120715593!5m2!1svi!2s"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <h4 style="padding-top: 6rem;padding-bottom: 0.5rem">Liên Hệ</h4>
+            <p ><strong>SĐT:</strong> 0359692282</p>
+            <p><strong>Email:</strong> <a href="mailto:anhhuanvg02@gmail.com">anhhuanvg02@gmail.com</a></p>
+            <p><strong>Ngân hàng:</strong> <img src="image/BIDV.png" alt="Dấu gạch" class="bank-img">
+            <div class="monogram">H & A</div>
+        </div>
+    </section>
+    <script src="script.js">   </script>
+</body>
+</html>

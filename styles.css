@@ -1,0 +1,528 @@
+/* Phông chữ và màu sắc chính */
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding-left: 0.5rem;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+}
+.hoa-img {
+    height: 14.6rem;
+    top: 0.1rem; 
+    width: 100%; 
+
+}
+.lienquan-img {
+    width: 8rem; 
+    height: auto;
+    display: block;
+    position: absolute;
+    /* top: 0.1rem;  */
+    right: 0; 
+}
+
+nav {
+    position: relative; 
+    background-color: #bd97b1a9;
+    padding: 1.8rem 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0;
+}
+nav ul li a {
+    color: #db4c13e5;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: auto; 
+    height: auto;
+    text-align: center;
+    border-radius: 0.5rem; 
+    background-color: #fff;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+nav ul li a:hover {
+    background-color: #a9d5f3cd;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+.menu-toggle span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 7px 0;
+    background-color: #e5490cc0;
+    transition: all 0.3s;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+.menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3.5rem; 
+    background-color: #dfb3df8e;
+    box-shadow: 0 0.4rem 0.8rem rgba(226, 161, 161, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .hoa-img {
+        height: 6rem;    
+    }
+    .lienquan-img {
+        width: 5rem; 
+        top: 1px; 
+        right: 1px; 
+    }
+    nav ul li a {
+        padding: 0.25rem; 
+    }
+}
+.container h1, .container h2, .container h3, .container h4 {
+    margin: 0; 
+    padding: 0; 
+}
+
+.container {
+    width: 90%;
+    max-width: 70rem;
+    padding-left: 1.5rem; 
+    padding-right: 1.5rem; 
+    margin: 0 auto; 
+}
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.container h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+.container h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.section {
+    padding: 5rem 0;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    container {
+        width: 95%; 
+        padding-left: 1rem; 
+        padding-right: 1rem; 
+    }  
+    .container h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .container h2 {
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .container h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .container h4 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+    .container p {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+    .highlight {
+        font-size: 1.7rem; 
+    }
+}
+
+
+/* 1.Trang chủ */
+.home {
+    background-color: #fc70c40c;
+}
+
+.home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align:center;
+}
+
+.home h2 {
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    text-align:left;
+    color: #e74c3c;
+    border-bottom: 2px solid #f40c0c;
+}
+.date-wrapper {
+    text-align: center;
+    margin-top: 30px; 
+}
+.date-wrapper h3{
+    
+    font-family: 'Allura', cursive;
+    color: #c0392b;
+    white-space: nowrap; 
+}
+
+.underline-img {
+    width: 10rem; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+}
+
+.highlight {
+    font-family: 'Dancing Script', cursive;
+    color: #c0392b;
+    white-space: nowrap; 
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.images img {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+/* Lịch */
+#calendar {
+    width: 50%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed; 
+}
+.calendar-wrapper {
+    font-family: 'Cookie', cursive;
+    text-align: center;
+    margin-top: 3rem;
+    background-color: #f8e6f1;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.15rem 0.15rem rgba(204, 13, 115, 0.904);
+}
+
+.calendar-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#monthYear {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color: #e74c3c;
+    margin: 0 1rem;
+}
+.highlighted {
+    background-color: #ace9ee; 
+    color: #d310bdd5; 
+}
+button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 0.4rem 2rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+#calendar {
+    width:50%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#calendar th,
+#calendar td {
+    padding: 0.5rem;
+    border: 2px solid #c3bebe;
+    font-size: 1.1rem;
+}
+
+#calendar th {
+    font-family: 'Shadows Into Light', cursive;
+    background-color: #f8e6f1;
+    color: #e74c3c;
+}
+
+#calendar td {
+    text-align: center;
+}
+
+.countdown-wrapper {
+    text-align: center;
+    max-width: 50%; 
+    margin: 0.5rem auto;
+    background-color: #f8e6f1;
+    border-radius: 1rem;
+    box-shadow: 0 0.08rem 0.08rem rgba(204, 13, 115, 0.904);
+}
+
+.countdown-wrapper h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+#countdown {
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    padding-bottom: 0.8rem;
+    justify-content: center;
+    gap: 1rem;
+    font-family: 'Lora', serif;
+}
+
+.time {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color: #2ab3bd;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+.time p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+    color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+    #monthYear {
+        font-size: 1.3rem;
+    }
+    #calendar {
+        width:100%;
+        font-size: 0.8rem;
+    }
+    #calendar th {
+        font-size: 0.65rem;
+        padding: 0.3rem; 
+
+    }
+    #calendar td {
+        padding: 0.3rem; 
+
+    }
+    .calendar-controls button {
+        padding: 0.2rem 1.6rem;
+        font-size: 0.6rem;
+    }
+    .countdown-wrapper {
+        max-width: 100%; 
+        padding: 1rem; 
+        font-size: 0.9rem; 
+    }
+    .countdown-wrapper h3 {
+        font-size: 1.3rem;
+    }
+    #countdown {
+        gap: 0.5rem; 
+    }
+    .time {
+        font-size: 1rem; 
+        padding: 0.5rem; 
+    }
+    .time p {
+        font-size: 0.7rem; 
+    }
+}
+
+
+
+/* 2.Bộ sưu tập */
+.gallery {
+    background-color: #fc70c40c;
+}
+.gallery h2 {
+    color: #e74c3c;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #b71f1fda;
+    padding-bottom: 1rem;
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+.video {
+    text-align: center;
+    margin: 2rem auto;
+}
+.video iframe{
+    width: 80%;
+    height: 360px;
+    border-radius: 0.5rem;
+}
+
+/* 3.Map */
+.map_inf {
+    background-color: #e56db50c;
+}
+.map_inf h2 {
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    color: #e74c3c;
+    border-bottom: 2px solid #f70e0e;
+}
+.text-block {
+    padding: 1.5rem;
+    background-color: #f0f0f0;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+.text-block p{
+    font-size: 1.2rem;
+}
+.text-block1 {
+    padding: 1.5rem;
+    background-color: #f0f0f0;
+    border-radius: 2rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.text-white {
+    color: #ffffff;
+    padding-bottom: 1rem;
+}
+.map {
+    margin-bottom: 3rem;
+    padding: 1rem;
+    background-color: #30845e;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.map iframe {
+    border-radius: 0.5rem;
+}
+.bank-img {
+    width: 10rem; 
+    height: auto;
+    display: block; 
+    margin: 2 auto; 
+    padding-top: 1rem;
+    border-radius: 0.5rem;
+}
+.monogram {
+    font-family: 'Allura', cursive;
+    font-size: 3rem;
+    color: #c0392b;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* Tạo 2 cột cho điện thoại */
+    }
+    .image-grid img {
+        width: 100%; /* Ảnh chiếm toàn bộ chiều rộng cột */
+        margin: 0; /* Xóa canh giữa ảnh */
+    }
+
+    .video {
+        margin: 1rem auto;
+    }
+    .video iframe{
+        width: 100%;
+        height: 160px;
+
+    }
+    .text-block {
+        padding: 1rem; 
+    }
+    .text-block p{
+        font-size: 0.9em;
+    }
+    .text-block1 {
+        padding: 1rem; /* Giảm padding cho khối văn bản kiểu 1 */
+    }
+    .images img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .monogram {
+        font-size: 2.5rem;
+    }
+
+}
